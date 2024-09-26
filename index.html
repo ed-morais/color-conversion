@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Cores Interativo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Cores Interativo</h1>
+      <div id="color-preview"></div>
+      <div class="converter-container">
+        <section id="rgb-section">
+          <h2>RGB</h2>
+          <div class="input-group">
+            <label for="red">Vermelho (0-255):</label>
+            <input type="number" id="red" min="0" max="255" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="green">Verde (0-255):</label>
+            <input type="number" id="green" min="0" max="255" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="blue">Azul (0-255):</label>
+            <input type="number" id="blue" min="0" max="255" value="0" />
+          </div>
+        </section>
+        <section id="hsl-section">
+          <h2>HSL</h2>
+          <div class="input-group">
+            <label for="hue">Matiz (0-360):</label>
+            <input type="number" id="hue" min="0" max="360" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="hsl-saturation">Saturação (0-100):</label>
+            <input
+              type="number"
+              id="hsl-saturation"
+              min="0"
+              max="100"
+              value="0"
+            />
+          </div>
+          <div class="input-group">
+            <label for="lightness">Luminosidade (0-100):</label>
+            <input type="number" id="lightness" min="0" max="100" value="0" />
+          </div>
+        </section>
+        <section id="hsv-section">
+          <h2>HSV</h2>
+          <div class="input-group">
+            <label for="hsv-hue">Matiz (0-360):</label>
+            <input type="number" id="hsv-hue" min="0" max="360" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="hsv-saturation">Saturação (0-100):</label>
+            <input
+              type="number"
+              id="hsv-saturation"
+              min="0"
+              max="100"
+              value="0"
+            />
+          </div>
+          <div class="input-group">
+            <label for="value">Valor (0-100):</label>
+            <input type="number" id="value" min="0" max="100" value="0" />
+          </div>
+        </section>
+        <section id="cmyk-section">
+          <h2>CMYK</h2>
+          <div class="input-group">
+            <label for="cyan">Ciano (0-100):</label>
+            <input type="number" id="cyan" min="0" max="100" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="magenta">Magenta (0-100):</label>
+            <input type="number" id="magenta" min="0" max="100" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="yellow">Amarelo (0-100):</label>
+            <input type="number" id="yellow" min="0" max="100" value="0" />
+          </div>
+          <div class="input-group">
+            <label for="key">Preto (0-100):</label>
+            <input type="number" id="key" min="0" max="100" value="0" />
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
